@@ -71,10 +71,10 @@ app.get('*', (req, res) => {
 });
 
 // localhost:3000/about
-app.use('/about', express.static(publicDirectoryPath + '/about.html'));
+// app.use('/about', express.static(publicDirectoryPath + '/about.html'));
 
 // localhost:3000/help
-app.use('/help', express.static(publicDirectoryPath + '/help.html'));
+// app.use('/help', express.static(publicDirectoryPath + '/help.html'));
 
 app.listen(port, () => {
   console.log(`Running on port ${port}`);

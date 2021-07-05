@@ -5,6 +5,7 @@ const request = require('postman-request');
 const { getCurrentWeather } = require('./utils');
 
 const app = express();
+const port = process.env.PORT || 3000;
 const publicDirectoryPath = path.join(__dirname, '../public');
 const viewsDirectoryPath = path.join(__dirname, '../templates/views');
 const partialsPath = path.join(__dirname, '../templates/partials');
@@ -75,7 +76,7 @@ app.use('/about', express.static(publicDirectoryPath + '/about.html'));
 // localhost:3000/help
 app.use('/help', express.static(publicDirectoryPath + '/help.html'));
 
-app.listen(5000, () => {
-  console.log('Running on port 5000');
+app.listen(port, () => {
+  console.log(`Running on port ${port}`);
 });
 

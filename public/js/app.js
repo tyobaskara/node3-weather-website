@@ -14,7 +14,7 @@
     formIcon.src = '';
 
     if (address) {
-      fetch(`asd/weather?address=${address}`).then(response => {
+      fetch(`/weather?address=${address}`).then(response => {
         response.json().then(data => {
           if (data.error) {
             formResult.innerHTML = data.error;

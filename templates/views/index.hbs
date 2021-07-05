@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+  <!-- <link rel="stylesheet" href="css/styles.css" /> -->
+  <link rel="stylesheet" href="/css/styles.css" />
+
+  <title>Express</title>
+</head>
+<body>
+  {{> header}}
+
+  <div class="main-content">
+    <h1>{{title}}</h1>
+    <p>My name is {{name}}</p>
+    <img class="portrait" src="/img/foto.png" alt="Prasetya">
+
+    <form>
+      <input id="address" type="text" placeholder="Location">
+      <button type="submit">Search</button>
+    </form>
+
+    <div class="result"><img id="form-icon"> <span id="form-result"></span></div>
+  </div>
+
+  {{> footer}}
+  <script src="/js/app.js"></script>
+</body>
+</html>
